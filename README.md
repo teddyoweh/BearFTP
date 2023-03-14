@@ -92,7 +92,7 @@ $ sh./node.sh -s localhost add test.txt
 
 - List all files on the server
 ```sh
-$ sh./node.sh -s localhost list ""
+$ sh./node.sh -s localhost list "/"
 ```
 - Fetch a file named "test.txt" from the server
 ```sh
