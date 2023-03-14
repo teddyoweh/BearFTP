@@ -1,5 +1,7 @@
 # BearFTP
- 
+Distribute P2P File Transfer Protocol
+
+
 ### Installation
 You can install the required modules by running:
 
@@ -80,3 +82,20 @@ client = Node(server="127.0.0.1", port=4455)
 client.fetch_file("path/to/file")
 
 ```
+
+
+## Using the Bash Script
+- Add a file named "test.txt" to the server
+```sh
+$ sh./node.sh -s localhost add test.txt
+```
+
+- List all files on the server
+```sh
+$ sh./node.sh -s localhost list ""
+```
+- Fetch a file named "test.txt" from the server
+```sh
+$ sh./node.sh -s localhost fetch test.txt
+```
+
