@@ -35,9 +35,21 @@ The script can be used to perform the following actions:
 action: The action to perform. Must be one of "add", "list", or "fetch".
 file: The name of the file to add/fetch.
 ```
-Example
-To add a file named "example.txt" to the server at address "localhost" on port "1234", use the following command:
 
+### Example
+- To add a file named "example.txt" to the server at address "localhost" on port "1234", use the following command:
+```sh
+$ python3 file_server.py -s localhost -p 1234 add example.txt
+```
+- To fetch a file named "example.txt" from the same server, use the following command:
+```sh
+$ python3 file_server.py -s localhost -p 1234 fetch example.txt
+```
+- To list all files available on the server, use the following command:
+```sh
+$ python$ file_server.py -s localhost -p 1234 list
+```
+## Using Node Module
 ### List files
 To list files in the server:
 ```py
